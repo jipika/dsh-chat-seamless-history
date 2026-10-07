@@ -1,0 +1,43 @@
+{
+  "name": "dsh-chat-seamless-history",
+  "icon": "./assets/icon.svg",
+  "version": "0.1.0",
+  "description": "Seamless chat history for DeepSeek Harness: scrolling near the top of the conversation auto-loads older messages through the official 'Load earlier' button and its position-anchoring path — no manual click, no jump. Pure DOM client plugin, no bundle changes.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jipika/dsh-chat-seamless-history.git"
+  },
+  "homepage": "https://github.com/jipika/dsh-chat-seamless-history#readme",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "chat",
+    "infinite-scroll",
+    "history"
+  ],
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "README.md",
+    "LICENSE",
+    "assets/icon.svg"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
